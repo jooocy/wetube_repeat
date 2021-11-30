@@ -1,0 +1,7 @@
+include template/base.pug
+block content
+    form(method="POST")
+        input(name="title" type="String" placeholder="title" required)
+        input(name="description" type="String" placeholder="description")
+        input(name="hashtags" type="String" placeholder="hashtags")
+        input(type="submit" value="enter")

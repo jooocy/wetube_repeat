@@ -1,0 +1,11 @@
+include template/base.pug
+block content
+    div
+        h2 #{video.title}
+        h3 #{video.description}
+        h4 #{video.hashtags}
+    br
+    h3
+        a(href=`/videos/${video._id}/edit`) Edit
+    h3
+        a(href=`/videos/${video._id}/delete`) Delete

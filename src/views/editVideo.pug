@@ -1,0 +1,7 @@
+include template/base.pug
+block content
+    form(method="POST")
+        input(name="title" type="String" value=video.title placeholder="title" required)
+        input(name="description" type="String" value=video.description placeholder="description")
+        input(name="hashtags" type="String" value=video.hashtags placeholder="hashtags")
+        input(type="submit" value="enter")

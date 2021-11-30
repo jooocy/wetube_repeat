@@ -1,0 +1,10 @@
+include template/base.pug
+block content
+    if errorMsg
+        h3 #{errorMsg}
+    form(method="POST")
+        input(name="name" type="String" placeholder="name" required)
+        input(name="email" type="email" placeholder="email@email.com" required)
+        input(name="password" type="password" placeholder="password" required)
+        input(name="password2" type="password" placeholder="check password" required)
+        input(type="submit" value="enter")

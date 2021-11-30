@@ -1,0 +1,9 @@
+include template/base.pug
+include mixin/videos.pug
+block content
+    include partials/search.pug
+    each video in videos
+        +videos(video)
+    else
+        li no video
+    
